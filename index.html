@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="convert.js"></script>
+</head>
+<body>
+<div class="tabs">
+    <input type="radio" name="inset" value="" id="tab_1" checked>
+    <label for="tab_1">Конвертация</label>
+
+    <input type="radio" name="inset" value="" id="tab_2">
+    <label for="tab_2">История</label>
+
+<div id="txt_1">
+
+
+        <div class="form-table">
+            <table cellspacing="35">
+                <form>
+                    <label>Исходная валюта:</label>
+                    <select name="from" id="from">
+                        <option value="0" selected="selected">USD</option>
+                        <option value="1">Euro</option>
+                        <option value="2">RUB</option>
+                        <option value="3">BEL</option>
+                    </select>
+                    <br/>
+                    <br/>
+                    <label>Введите сумму: </label>
+                    <input name="cash" id="cash" class="is" type="text"/>
+                    <br/>
+                    <br/>
+                    <label>Валюта для перевода: </label>
+                    <select name="to" id="to">
+                        <option value="0">USD</option>
+                        <option value="1" selected="selected">Euro</option>
+                        <option value="2">RUB</option>
+                        <option value="3">BEL</option>
+                    </select>
+                    <br/>
+                    <br/>
+                    <input type=button class="knopka" value="Конвертировать" onclick='Converting();'>
+                    <br/>
+                    <br/>
+                    <label><span id="result" class="result"></span></label>
+                   <br></br>
+                </form>
+            </table>
+
+        </div>
+
+
+</div>
+
+<!-- Tab links -->
+
+
+<div id="txt_2">
+    <label>Последние конвертирования</label>
+    <ul id="oli">
+    </ul>
+</div>
+
+
+</div>
+</body>
+</html>
